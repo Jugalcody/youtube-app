@@ -45,7 +45,6 @@ def app():
                os.system("del youtube.spec")
                print("Enter y ----")
                os.system("rmdir /s __pycache__")
-               os.system("del *git*")
                os.system("del main.py")
                os.system("del youtube.py")
                os.system("del images.ico")
