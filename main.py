@@ -5,7 +5,11 @@ def app():
  if s=='y':
    try:
      import os
-     
+     try:
+        os.system("sudo apt install python3-tk")
+        import tkinter as tk
+     except:
+        print("Kindly install tkinter packet!!\n")
      os.system("pyinstaller -i images.ico -F youtube.py")
    except :
         print("an error occured, try agaian!!")

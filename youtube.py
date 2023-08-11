@@ -1,15 +1,7 @@
-import os
-int flag=1
-try:
-   import tkinter as tk
-   import webbrowser as wb,re,os
-except:
-   try:
-        os.system("sudo apt install python3-tk")
-        import tkinter as tk
-   except:
-        print("Kindly install tkinter packet!!\n")
-        flag=0     
+
+import tkinter as tk
+import webbrowser as wb,re,os
+
 class Youtube:  #Youtube class will create a youtube front page 
     def __init__(self):
            
@@ -50,7 +42,7 @@ class Youtube:  #Youtube class will create a youtube front page
 
 
 
-if __name__=="__main__" && flag==1:
+if __name__=="__main__":
 
        root=Youtube()
        
