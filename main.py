@@ -5,6 +5,7 @@ def app():
  if s=='y':
    try:
      import os
+     
      os.system("pyinstaller -i images.ico -F youtube.py")
    except :
         print("an error occured, try agaian!!")
@@ -15,6 +16,10 @@ def app():
    c=a+'\dist\youtube.exe'
    o=input("you are using terminal or cmd(t/c)? ")
    if o=='t':
+       try:    
+           os.system("sudo apt install python3-tk")
+       except:
+             print("\nhope tkinter module is installed\n")    
        os.system(f"cp {b} {a}")
        os.system("rm -r build")
        os.system("rm -r dist")
